@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvShayari.layoutManager = LinearLayoutManager(this)
         binding.rvShayari.adapter = rvAdapter
 
-        rvAdapter.shayariList = myViewModel.getData()
+        rvAdapter.shayariList = myViewModel.shayariList
 //            shayariList.addAll(SampleData.data)
         rvAdapter.notifyDataSetChanged()
 
